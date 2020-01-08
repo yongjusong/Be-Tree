@@ -1,0 +1,202 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BACKING_STORE_HPP	backing_store.hpp	5;"	d
+CC	Makefile	/^CC=g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS=-Wall -std=c++11 -g -O3 $/;"	m
+DEBUG_HPP	debug.hpp	2;"	d
+DEFAULT_MAX_NODE_SIZE	betree.hpp	170;"	d
+DEFAULT_MIN_FLUSH_SIZE	betree.hpp	175;"	d
+DEFAULT_TEST_CACHE_SIZE	test.cpp	92;"	d	file:
+DEFAULT_TEST_MAX_NODE_SIZE	test.cpp	90;"	d	file:
+DEFAULT_TEST_MIN_FLUSH_SIZE	test.cpp	91;"	d	file:
+DEFAULT_TEST_NDISTINCT_KEYS	test.cpp	93;"	d	file:
+DEFAULT_TEST_NOPS	test.cpp	94;"	d	file:
+DELETE	betree.hpp	134;"	d
+INSERT	betree.hpp	133;"	d
+Message	betree.hpp	/^  Message(int opc, const Value &v) :$/;"	f	class:Message
+Message	betree.hpp	/^  Message(void) :$/;"	f	class:Message
+Message	betree.hpp	/^class Message {$/;"	c
+MessageKey	betree.hpp	/^  MessageKey(const Key & k, uint64_t tstamp) :$/;"	f	class:MessageKey
+MessageKey	betree.hpp	/^  MessageKey(void) :$/;"	f	class:MessageKey
+MessageKey	betree.hpp	/^class MessageKey {$/;"	c
+SWAP_SPACE_HPP	swap_space.hpp	71;"	d
+UPDATE	betree.hpp	135;"	d
+_deserialize	betree.hpp	/^    void _deserialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:betree::child_info
+_deserialize	betree.hpp	/^    void _deserialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:betree::node
+_deserialize	betree.hpp	/^  void _deserialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:Message
+_deserialize	betree.hpp	/^  void _deserialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:MessageKey
+_deserialize	swap_space.hpp	/^    void _deserialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:swap_space::pointer
+_serialize	betree.hpp	/^    void _serialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:betree::child_info
+_serialize	betree.hpp	/^    void _serialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:betree::node
+_serialize	betree.hpp	/^  void _serialize(std::iostream &fs, serialization_context &context) const {$/;"	f	class:MessageKey
+_serialize	betree.hpp	/^  void _serialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:Message
+_serialize	swap_space.hpp	/^    void _serialize(std::iostream &fs, serialization_context &context) {$/;"	f	class:swap_space::pointer
+access	swap_space.hpp	/^    void access(uint64_t tgt, bool dirty) const {$/;"	f	class:swap_space::pin
+allocate	backing_store.cpp	/^uint64_t one_file_per_object_backing_store::allocate(size_t n) {$/;"	f	class:one_file_per_object_backing_store
+allocate	swap_space.hpp	/^  pointer<Referent> allocate(Referent * tgt) {$/;"	f	class:swap_space
+apply	betree.hpp	/^    void apply(const MessageKey<Key> &mkey, const Message<Value> &elt,$/;"	f	class:betree::node
+apply	betree.hpp	/^    void apply(const MessageKey<Key> &msgkey, const Message<Value> &msg) {$/;"	f	class:betree::iterator
+backing_store	backing_store.hpp	/^class backing_store {$/;"	c
+backstore	swap_space.hpp	/^  backing_store *backstore;  $/;"	m	class:swap_space
+begin	betree.hpp	/^  iterator begin(void) const {$/;"	f	class:betree
+benchmark_queries	test.cpp	/^void benchmark_queries(betree<uint64_t, std::string> &b,$/;"	f
+benchmark_upserts	test.cpp	/^void benchmark_upserts(betree<uint64_t, std::string> &b,$/;"	f
+bet	betree.hpp	/^    const betree &bet;$/;"	m	class:betree::iterator
+betree	betree.hpp	/^  betree(swap_space *sspace,$/;"	f	class:betree
+betree	betree.hpp	/^template<class Key, class Value> class betree {$/;"	c
+bsid	swap_space.hpp	/^    uint64_t bsid;$/;"	m	class:swap_space::object
+child	betree.hpp	/^    node_pointer child;$/;"	m	class:betree::child_info
+child_info	betree.hpp	/^    child_info(node_pointer child, uint64_t child_size)$/;"	f	class:betree::child_info
+child_info	betree.hpp	/^    child_info(void)$/;"	f	class:betree::child_info
+child_info	betree.hpp	/^  class child_info : public serializable {$/;"	c	class:betree
+child_size	betree.hpp	/^    uint64_t child_size;$/;"	m	class:betree::child_info
+cmp_by_last_access	swap_space.cpp	/^bool swap_space::cmp_by_last_access(swap_space::object *a, swap_space::object *b) {$/;"	f	class:swap_space
+current_in_memory_objects	swap_space.hpp	/^  uint64_t current_in_memory_objects = 0;$/;"	m	class:swap_space
+deallocate	backing_store.cpp	/^void one_file_per_object_backing_store::deallocate(uint64_t id) {$/;"	f	class:one_file_per_object_backing_store
+debug	debug.hpp	5;"	d
+debug	debug.hpp	7;"	d
+default_value	betree.hpp	/^  Value default_value;$/;"	m	class:betree
+depoint	swap_space.hpp	/^    void depoint(void) {$/;"	f	class:swap_space::pointer
+deserialize	swap_space.cpp	/^void deserialize(std::iostream &fs, serialization_context &context, int64_t &x)$/;"	f
+deserialize	swap_space.cpp	/^void deserialize(std::iostream &fs, serialization_context &context, std::string &x)$/;"	f
+deserialize	swap_space.cpp	/^void deserialize(std::iostream &fs, serialization_context &context, uint64_t &x)$/;"	f
+deserialize	swap_space.hpp	/^template<class Key, class Value> void deserialize(std::iostream &fs,$/;"	f
+deserialize	swap_space.hpp	/^template<class X> void deserialize(std::iostream &fs, serialization_context &context, X &x)$/;"	f
+deserialize	swap_space.hpp	/^template<class X> void deserialize(std::iostream &fs, serialization_context &context, X *&x)$/;"	f
+do_scan	test.cpp	/^void do_scan(typename betree<Key, Value>::iterator &betit,$/;"	f
+dopin	swap_space.hpp	/^    void dopin(swap_space *newss, uint64_t newtarget) {$/;"	f	class:swap_space::pin
+dump_messages	betree.hpp	/^  void dump_messages(void) {$/;"	f	class:betree
+elements	betree.hpp	/^    message_map elements;$/;"	m	class:betree::node
+end	betree.hpp	/^  iterator end(void) const {$/;"	f	class:betree
+erase	betree.hpp	/^  void erase(Key k)$/;"	f	class:betree
+first	betree.hpp	/^    Key first;$/;"	m	class:betree::iterator
+flush	betree.hpp	/^    pivot_map flush(betree &bet, message_map &elts)$/;"	f	class:betree::node
+get	backing_store.cpp	/^std::iostream * one_file_per_object_backing_store::get(uint64_t id) {$/;"	f	class:one_file_per_object_backing_store
+get_element_begin	betree.hpp	/^    get_element_begin(const typename pivot_map::iterator it) {$/;"	f	class:betree::node
+get_element_begin	betree.hpp	/^    static OUT get_element_begin(IN & elts, const Key &k) {$/;"	f	class:betree::node
+get_element_begin	betree.hpp	/^    typename message_map::const_iterator get_element_begin(const Key &k) const {$/;"	f	class:betree::node
+get_element_begin	betree.hpp	/^    typename message_map::iterator get_element_begin(const Key &k) {$/;"	f	class:betree::node
+get_next_message	betree.hpp	/^    get_next_message(const MessageKey<Key> *mkey) const {$/;"	f	class:betree::node
+get_next_message_from_children	betree.hpp	/^    get_next_message_from_children(const MessageKey<Key> *mkey) const {$/;"	f	class:betree::node
+get_pin	swap_space.hpp	/^    const pin<Referent> get_pin(void) const {$/;"	f	class:swap_space::pointer
+get_pin	swap_space.hpp	/^    pin<Referent> get_pin(void) {$/;"	f	class:swap_space::pointer
+get_pivot	betree.hpp	/^    get_pivot(const Key & k) {$/;"	f	class:betree::node
+get_pivot	betree.hpp	/^    static OUT get_pivot(IN & mp, const Key & k) {$/;"	f	class:betree::node
+get_pivot	betree.hpp	/^    typename pivot_map::const_iterator get_pivot(const Key & k) const {$/;"	f	class:betree::node
+id	swap_space.hpp	/^    uint64_t id;$/;"	m	class:swap_space::object
+insert	betree.hpp	/^  void insert(Key k, Value v)$/;"	f	class:betree
+is_dirty	swap_space.hpp	/^    bool is_dirty(void) const {$/;"	f	class:swap_space::pointer
+is_in_memory	swap_space.hpp	/^    bool is_in_memory(void) const {$/;"	f	class:swap_space::pointer
+is_leaf	betree.hpp	/^    bool is_leaf(void) const {$/;"	f	class:betree::node
+is_leaf	swap_space.hpp	/^    bool is_leaf;$/;"	m	class:swap_space::object
+is_leaf	swap_space.hpp	/^  bool is_leaf;$/;"	m	class:serialization_context
+is_valid	betree.hpp	/^    bool is_valid;$/;"	m	class:betree::iterator
+iterator	betree.hpp	/^    iterator(const betree &bet)$/;"	f	class:betree::iterator
+iterator	betree.hpp	/^    iterator(const betree &bet, const MessageKey<Key> *mkey)$/;"	f	class:betree::iterator
+iterator	betree.hpp	/^  class iterator {$/;"	c	class:betree
+key	betree.hpp	/^  Key key;$/;"	m	class:MessageKey
+last_access	swap_space.hpp	/^    uint64_t last_access;$/;"	m	class:swap_space::object
+load	swap_space.hpp	/^  void load(uint64_t tgt) {$/;"	f	class:swap_space
+lower_bound	betree.hpp	/^  iterator lower_bound(Key key) const {$/;"	f	class:betree
+lru_pqueue	swap_space.hpp	/^  std::set<object *, bool (*)(object *, object *)> lru_pqueue;$/;"	m	class:swap_space
+main	test.cpp	/^int main(int argc, char **argv)$/;"	f
+max_in_memory_objects	swap_space.hpp	/^  uint64_t max_in_memory_objects;$/;"	m	class:swap_space
+max_node_size	betree.hpp	/^  uint64_t max_node_size;$/;"	m	class:betree
+maybe_evict_something	swap_space.cpp	/^void swap_space::maybe_evict_something(void)$/;"	f	class:swap_space
+merge	betree.hpp	/^    node_pointer merge(betree &bet,$/;"	f	class:betree::node
+merge_small_children	betree.hpp	/^    void merge_small_children(betree &bet) {$/;"	f	class:betree::node
+message_map	betree.hpp	/^  typedef typename std::map<MessageKey<Key>, Message<Value> > message_map;$/;"	t	class:betree
+min_flush_size	betree.hpp	/^  uint64_t min_flush_size;$/;"	m	class:betree
+min_node_size	betree.hpp	/^  uint64_t min_node_size;$/;"	m	class:betree
+next_access_time	swap_space.hpp	/^  uint64_t next_access_time = 0;$/;"	m	class:swap_space
+next_command	test.cpp	/^int next_command(FILE *input, int *op, uint64_t *arg)$/;"	f
+next_id	swap_space.hpp	/^  uint64_t next_id = 1;$/;"	m	class:swap_space
+next_timestamp	betree.hpp	/^  uint64_t next_timestamp = 1; \/\/ Nothing has a timestamp of 0$/;"	m	class:betree
+nextid	backing_store.hpp	/^  uint64_t	nextid;$/;"	m	class:one_file_per_object_backing_store
+node	betree.hpp	/^  class node : public serializable {$/;"	c	class:betree
+node_pointer	betree.hpp	/^  typedef typename swap_space::pointer<node> node_pointer;$/;"	t	class:betree
+object	swap_space.cpp	/^swap_space::object::object(swap_space *sspace, serializable * tgt) {$/;"	f	class:swap_space::object
+object	swap_space.hpp	/^  class object {$/;"	c	class:swap_space
+objects	swap_space.hpp	/^  std::unordered_map<uint64_t, object *> objects;$/;"	m	class:swap_space
+one_file_per_object_backing_store	backing_store.cpp	/^one_file_per_object_backing_store::one_file_per_object_backing_store(std::string rt)$/;"	f	class:one_file_per_object_backing_store
+one_file_per_object_backing_store	backing_store.hpp	/^class one_file_per_object_backing_store: public backing_store {$/;"	c
+opcode	betree.hpp	/^  int opcode;$/;"	m	class:Message
+operator !=	betree.hpp	/^    bool operator!=(const iterator &other) {$/;"	f	class:betree::iterator
+operator !=	swap_space.hpp	/^    bool operator!=(const pointer &other) const {$/;"	f	class:swap_space::pointer
+operator ++	betree.hpp	/^    iterator &operator++(void) {$/;"	f	class:betree::iterator
+operator ->	swap_space.hpp	/^    Referent * operator->(void) {$/;"	f	class:swap_space::pin
+operator ->	swap_space.hpp	/^    const Referent * operator->(void) const {$/;"	f	class:swap_space::pin
+operator ->	swap_space.hpp	/^    const pin<Referent> operator->(void) const {$/;"	f	class:swap_space::pointer
+operator ->	swap_space.hpp	/^    pin<Referent> operator->(void) {$/;"	f	class:swap_space::pointer
+operator <	betree.hpp	/^bool operator<(const Key & key, const MessageKey<Key> & mkey) {$/;"	f
+operator <	betree.hpp	/^bool operator<(const MessageKey<Key> & mkey, const Key & key) {$/;"	f
+operator <	betree.hpp	/^bool operator<(const MessageKey<Key> & mkey1, const MessageKey<Key> & mkey2) {$/;"	f
+operator =	swap_space.hpp	/^    pin &operator=(const pin &other) {$/;"	f	class:swap_space::pin
+operator =	swap_space.hpp	/^    pointer & operator=(const pointer &other) {$/;"	f	class:swap_space::pointer
+operator ==	betree.hpp	/^    bool operator==(const iterator &other) {$/;"	f	class:betree::iterator
+operator ==	betree.hpp	/^bool operator==(const Message<Value> &a, const Message<Value> &b) {$/;"	f
+operator ==	betree.hpp	/^bool operator==(const MessageKey<Key> &a, const MessageKey<Key> &b) {$/;"	f
+operator ==	swap_space.hpp	/^    bool operator==(const pointer &other) const {$/;"	f	class:swap_space::pointer
+pin	swap_space.hpp	/^    pin(const pointer<Referent> *p)$/;"	f	class:swap_space::pin
+pin	swap_space.hpp	/^    pin(void)$/;"	f	class:swap_space::pin
+pin	swap_space.hpp	/^  class pin {$/;"	c	class:swap_space
+pincount	swap_space.hpp	/^    uint64_t pincount;$/;"	m	class:swap_space::object
+pivot_map	betree.hpp	/^  typedef typename std::map<Key, child_info> pivot_map;$/;"	t	class:betree
+pivots	betree.hpp	/^    pivot_map pivots;$/;"	m	class:betree::node
+pointer	swap_space.hpp	/^    pointer(const pointer &other) {$/;"	f	class:swap_space::pointer
+pointer	swap_space.hpp	/^    pointer(swap_space *sspace, Referent *tgt)$/;"	f	class:swap_space::pointer
+pointer	swap_space.hpp	/^    pointer(void) :$/;"	f	class:swap_space::pointer
+pointer	swap_space.hpp	/^  class pointer : public serializable {$/;"	c	class:swap_space
+pos_is_valid	betree.hpp	/^    bool pos_is_valid;$/;"	m	class:betree::iterator
+position	betree.hpp	/^    std::pair<MessageKey<Key>, Message<Value> > position;$/;"	m	class:betree::iterator
+put	backing_store.cpp	/^void one_file_per_object_backing_store::put(std::iostream *ios)$/;"	f	class:one_file_per_object_backing_store
+query	betree.hpp	/^    Value query(const betree & bet, const Key k) const$/;"	f	class:betree::node
+query	betree.hpp	/^  Value query(Key k)$/;"	f	class:betree
+range_end	betree.hpp	/^  MessageKey range_end(void) const {$/;"	f	class:MessageKey
+range_end	betree.hpp	/^  static MessageKey range_end(const Key &key) {$/;"	f	class:MessageKey
+range_start	betree.hpp	/^  MessageKey range_start(void) const {$/;"	f	class:MessageKey
+range_start	betree.hpp	/^  static MessageKey range_start(const Key &key) {$/;"	f	class:MessageKey
+refcount	swap_space.hpp	/^    uint64_t refcount;$/;"	m	class:swap_space::object
+root	backing_store.hpp	/^  std::string	root;$/;"	m	class:one_file_per_object_backing_store
+root	betree.hpp	/^  node_pointer root;$/;"	m	class:betree
+second	betree.hpp	/^    Value second;$/;"	m	class:betree::iterator
+serializable	swap_space.hpp	/^class serializable {$/;"	c
+serialization_context	swap_space.hpp	/^  serialization_context(swap_space &sspace) :$/;"	f	class:serialization_context
+serialization_context	swap_space.hpp	/^class serialization_context {$/;"	c
+serialize	swap_space.cpp	/^void serialize(std::iostream &fs, serialization_context &context, int64_t x)$/;"	f
+serialize	swap_space.cpp	/^void serialize(std::iostream &fs, serialization_context &context, std::string x)$/;"	f
+serialize	swap_space.cpp	/^void serialize(std::iostream &fs, serialization_context &context, uint64_t x)$/;"	f
+serialize	swap_space.hpp	/^template<class Key, class Value> void serialize(std::iostream &fs,$/;"	f
+serialize	swap_space.hpp	/^template<class X> void serialize(std::iostream &fs, serialization_context &context, X &x)$/;"	f
+serialize	swap_space.hpp	/^template<class X> void serialize(std::iostream &fs, serialization_context &context, X *&x)$/;"	f
+set_cache_size	swap_space.cpp	/^void swap_space::set_cache_size(uint64_t sz) {$/;"	f	class:swap_space
+setup_next_element	betree.hpp	/^    void setup_next_element(void) {$/;"	f	class:betree::iterator
+split	betree.hpp	/^    pivot_map split(betree &bet) {$/;"	f	class:betree::node
+ss	betree.hpp	/^  swap_space *ss;$/;"	m	class:betree
+ss	swap_space.hpp	/^    swap_space *ss;$/;"	m	class:swap_space::pin
+ss	swap_space.hpp	/^    swap_space *ss;$/;"	m	class:swap_space::pointer
+ss	swap_space.hpp	/^  swap_space &ss;$/;"	m	class:serialization_context
+swap_space	swap_space.cpp	/^swap_space::swap_space(backing_store *bs, uint64_t n) :$/;"	f	class:swap_space
+swap_space	swap_space.hpp	/^class swap_space {$/;"	c
+target	swap_space.hpp	/^    serializable * target;$/;"	m	class:swap_space::object
+target	swap_space.hpp	/^    uint64_t target;$/;"	m	class:swap_space::pin
+target	swap_space.hpp	/^    uint64_t target;$/;"	m	class:swap_space::pointer
+target_is_dirty	swap_space.hpp	/^    bool target_is_dirty;$/;"	m	class:swap_space::object
+test	test.cpp	/^int test(betree<uint64_t, std::string> &b,$/;"	f
+timer_start	test.cpp	/^void timer_start(uint64_t &timer)$/;"	f
+timer_stop	test.cpp	/^void timer_stop(uint64_t &timer)$/;"	f
+timestamp	betree.hpp	/^  uint64_t timestamp;$/;"	m	class:MessageKey
+unpin	swap_space.hpp	/^    void unpin(void) {$/;"	f	class:swap_space::pin
+update	betree.hpp	/^  void update(Key k, Value v)$/;"	f	class:betree
+upper_bound	betree.hpp	/^  iterator upper_bound(Key key) const {$/;"	f	class:betree
+upsert	betree.hpp	/^  void upsert(int opcode, Key k, Value v)$/;"	f	class:betree
+usage	test.cpp	/^void usage(char *name)$/;"	f
+val	betree.hpp	/^  Value val;$/;"	m	class:Message
+write_back	swap_space.cpp	/^void swap_space::write_back(swap_space::object *obj)$/;"	f	class:swap_space
+~pin	swap_space.hpp	/^    ~pin(void) {$/;"	f	class:swap_space::pin
+~pointer	swap_space.hpp	/^    ~pointer(void) {$/;"	f	class:swap_space::pointer
+~serializable	swap_space.hpp	/^  virtual ~serializable(void) {};$/;"	f	class:serializable
